@@ -9,5 +9,8 @@ public interface ProdutoService {
 	public Produto criarProduto(Produto produto);
 
 	public List<Produto> buscarProduto();
-
+	
+	public Produto atualizarProduto(Produto dados); 
+	
+	public void deletarProduto(Long id);
 }

@@ -25,6 +25,12 @@ public class ProdutoServiceImpl implements ProdutoService {
 		return produtoRepository.findAll();
 	}
 	
+	public Produto atualizarProduto(Produto produto) {
+		return produtoRepository.save(produto);
+	}
 	
-
+	public void deletarProduto(Long id) {
+		produtoRepository.deleteById(id);
+	}
+	
 }
