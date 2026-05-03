@@ -36,7 +36,6 @@ public class ProdutoController {
 	
 	@PutMapping()
 	public Produto atualizar(@RequestBody Produto produto) {
-		
 		return produtoService. atualizarProduto(produto);
 	}
 
